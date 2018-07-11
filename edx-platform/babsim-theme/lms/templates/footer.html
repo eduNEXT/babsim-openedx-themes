@@ -11,25 +11,93 @@
   from datetime import date
 %>
 <div class="wrapper wrapper-footer">
- <footer id="footer-openedx">
-    <div class="colophon" style="width:auto">
-      <nav class="nav-colophon">
-        <ol>
-			<li>
-				&copy; ${_(' {year} Microsoft').format( year=date.today().year)}
-			</li>
-			<li><a href="https://www.microsoft.com/en-us/privacystatement/default.aspx" target="_blank" data-mscc-ic="false">Privacy & Cookies</a></li>
-			<li><a href="${reverse('tos')}" target="_blank" data-mscc-ic="false">Terms of Service</a></li>
-			<li><a href="https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/en-us.aspx" target="_blank" data-mscc-ic="false">Trademarks</a></li>
-			<li><a href="/faq" target="_blank">Support</a></li>
-        </ol>      
-     </nav>
-   </div>
-   <div class="references" style="width:auto" >
-       <a href="https://open.edx.org/" target="_blank"><img class="iconDetails" src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" width="160" alt="Powered by Open edX" style="vertical-align:bottom"></a>
-       <a href="https://azure.microsoft.com" target="_blank"><img src="/static/comprehensive/images/azure_logo.png"alt="on Microsoft Azure" style="vertical-align:bottom" width="160" height="28"></a>
-   </div>
-  </footer>
+  <footer id="footer-openedx" class="grid-container"
+      ## When rendering the footer through the branding API,
+      ## the direction may not be set on the parent element,
+      ## so we set it here.
+      % if bidi:
+        dir=${bidi}
+      % endif
+    >
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="${_('About')}">
+          <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="https://babsim.com/">About</a>
+              </li>
+              <li class="nav-colophon-02">
+                <a id="contactUs" href="https://babsim.com/contact/">Contact US</a>
+              </li>
+          </ol>
+        </nav>
+
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="https://babsim.com/">
+              ## The default logo is a placeholder.
+              ## You can either replace this link entirely or update
+              ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
+              ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
+              ## can be included in the footer on other sites
+              ## (e.g. a blog or marketing front-end) to provide a consistent
+              ## user experience.  See the branding app for details.
+              <img alt="organization logo" src="${static.url('images/footer_logo.png')}">
+            </a>
+          </p>
+        </div>
+
+        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+        <p class="copyright">© Copyright 2018 • Babbage Simmel. All Rights Reserved.</p>
+
+        <nav class="nav-legal" aria-label="${_('Legal')}">
+          <ul>
+              <li class="nav-legal-01">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+
+      ## Please leave this link and use one of the logos provided
+      ## The OpenEdX link may be hidden when this view is served
+      ## through an API to partner sites (such as marketing sites or blogs),
+      ## which are not technically powered by OpenEdX.
+      % if not hide_openedx_link:
+      <div class="footer-about-openedx">
+        <section class="social-feed">
+        <a href="https://www.linkedin.com/company/babbage-simmel/" target="_blank">
+          <span class="icon fa fa-linkedin" aria-hidden="true"></span>
+        </a>
+        <a href="https://twitter.com/babsim" target="_blank">
+          <span class="icon fa fa-twitter" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.facebook.com/BabbageSimmel/" target="_blank">
+          <span class="icon fa fa-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.instagram.com/babbagesimmel/" target="_blank">
+          <span class="icon fa fa-instagram" aria-hidden="true"></span>
+        </a>
+      </section>
+      </div>
+      <div class="powered-icons">
+        <div class="footer-about-openedx icon-openedx">
+          <p>
+            <a href="${footer['openedx_link']['url']}">
+              <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+            </a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <a href="https://www.proversity.org/">
+              <img src="${static.url('images/footer_proversity.png')}" width="140" />
+            </a>
+          </p>
+        </div>
+      </div>
+      % endif
+    </footer>
 </div>
 % if include_dependencies:
   <%static:js group='base_vendor'/>

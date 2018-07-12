@@ -1,0 +1,32 @@
+
+@import 'lms/static/sass/partials/base/variables';
+
+$main-color: #E57B25;
+$main-color-darker: darken( $main-color, 10%);
+$main-color-lighter: lighten( $main-color, 10% );
+
+$action-primary-bg: $main-color;
+$action-primary-shadow: $main-color-darker;
+$action-primary-focused-bg: $main-color-lighter;
+$action-primary-active-bg: $main-color;
+$header-border-color: $main-color;
+
+$header-bg: #f4f4f4;
+$footer-bg: #3E3E3E;
+
+$link-color: #72A1A9;
+$link-hover:  #3E3E3E;
+
+@font-face {
+font-family: 'proxima nova regular';
+font-style: normal;
+font-weight: normal;
+src: local('proxima nova regular'), url('ProximaSansRegular-Regular.ttf') format('truetype');
+}
+
+$sans-serif: 'proxima nova regular';
+$body-font-family: 'proxima nova regular';
+$f-sans-serif: 'proxima nova regular';
+$header-sans-serif: 'proxima nova regular';
+$f-serif: 'proxima nova regular';
+$f-monospace: 'proxima nova regular';

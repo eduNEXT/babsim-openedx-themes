@@ -21,7 +21,7 @@ $link-hover:  #3E3E3E;
 font-family: 'proxima nova regular';
 font-style: normal;
 font-weight: normal;
-src: local('proxima nova regular'), url('ProximaSansRegular-Regular.ttf') format('truetype');
+src: url('#{$static-path}/fonts/ProximaSansRegular-Regular.ttf') format('truetype');
 }
 
 $sans-serif: 'proxima nova regular';

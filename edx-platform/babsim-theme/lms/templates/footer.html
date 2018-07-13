@@ -23,10 +23,13 @@
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
               <li class="nav-colophon-01">
-                <a id="about" href="https://babsim.com/">About</a>
+                <a id="about" href="https://babsim.com/about/">About</a>
               </li>
               <li class="nav-colophon-02">
-                <a id="contactUs" href="https://babsim.com/contact/">Contact US</a>
+                <a id="babbage-simmel" href="https://babsim.com/">Babbage Simmel Home</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contactUs" href="https://babsim.com/contact/">Contact Us</a>
               </li>
           </ol>
         </nav>
@@ -83,15 +86,15 @@
       <div class="powered-icons">
         <div class="footer-about-openedx icon-openedx">
           <p>
-            <a href="${footer['openedx_link']['url']}">
-              <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+            <a href="https://www.proversity.org/">
+              <img src="${static.url('images/footer_proversity.png')}" width="140" />
             </a>
           </p>
         </div>
         <div>
           <p>
-            <a href="https://www.proversity.org/">
-              <img src="${static.url('images/footer_proversity.png')}" width="140" />
+            <a href="${footer['openedx_link']['url']}">
+              <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
             </a>
           </p>
         </div>

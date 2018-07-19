@@ -81,6 +81,10 @@ section.courses-container {
 		float: right;
 		width: 23%;
         margin-top: 100px;
+
+        div p a img {
+        	margin-left: 5px;
+        }
 	}
 
 	.footer-about-openedx {
@@ -102,6 +106,13 @@ section.courses-container {
 	    }
 	}
 
+}
+
+/***** static-template ***/
+section.container.about h4 {
+    margin-bottom: 8px;
+    margin-top: 20px;
+    color: #E57B25;
 }
 
 /***** Instructor ***/

@@ -13,6 +13,12 @@
 
  }
 
+@media (min-width: 768px) {
+	 ol.dropdown-list {
+	 	display: none;
+	 }
+}
+
  @media (max-width: 768px) {
 	.hidden-mobile {
 		display: none !important;
@@ -296,7 +302,7 @@ body.view-in-course.view-instructordash .window-wrap {
 	}
 
 	div.search-bar div.search-field-wrapper
-	button.search-button {
+	.wrapper-course-modes button.search-button {
 		right: -63px;
 	}
 

@@ -41,7 +41,7 @@
     	display:flex;
     }
 
-    ol.left.nav-global.list-inline.authenticated {
+    .header-global.slim .wrapper-header ol.left.nav-global.list-inline.authenticated {
     	margin-top: 0px;
     }
 
@@ -354,6 +354,13 @@ div.heading-group h1 button:hover {
 	.course-info header.course-profile
 	.intro-inner-wrapper .media div.hero img {
 		display: none;
+	}
+}
+
+/**course forum**/
+body.ltr.discussion.lang_en {
+	button {
+	    box-shadow: none !important;
 	}
 }
 

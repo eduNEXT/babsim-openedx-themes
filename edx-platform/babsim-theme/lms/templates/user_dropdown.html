@@ -15,7 +15,7 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
 %>
 
 % if uses_pattern_library:
-    <div class="wrapper-user-menu dropdown-menu-container logged-in js-header-user-menu">
+    <div class="wrapper-user-menu dropdown-menu-container logged-in js-header-user-menu hidden-mobile">
         <a href="${reverse('dashboard')}" class="menu-title">
             <span class="sr-only">${_("Dashboard for:")}</span>
             <%
@@ -40,6 +40,14 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
             </ul>
         </div>
     </div>
+
+    <ol class="left nav-global list-inline authenticated dropdown-list hidden-mobile">
+        ${navigation_dropdown_menu_links()}
+        <li class="dropdown-item item has-block-link">
+            <a href="${reverse('logout')}" role="menuitem" >${_("Sign Out")}
+            </a>
+        </li>
+    </ol>
 % else:
     <ol class="user hidden-mobile">
         <li class="primary">

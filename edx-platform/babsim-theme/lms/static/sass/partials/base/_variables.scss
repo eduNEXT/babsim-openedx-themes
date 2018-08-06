@@ -15,6 +15,8 @@ $footer-bg: #3E3E3E;
 $link-color: #72A1A9;
 $link-hover:  #3E3E3E;
 
+$max-width-mobile:768px;
+
 @font-face {
 font-family: 'proxima nova regular';
 font-style: normal;
@@ -28,5 +30,3 @@ $f-sans-serif: 'proxima nova regular';
 $header-sans-serif: 'proxima nova regular';
 $f-serif: 'proxima nova regular';
 $f-monospace: 'proxima nova regular';
-
-@import "../overrides";

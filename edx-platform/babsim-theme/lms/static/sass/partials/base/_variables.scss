@@ -1,6 +1,4 @@
-
 @import 'lms/static/sass/partials/base/variables';
-
 $main-color: #E57B25;
 $main-color-darker: darken( $main-color, 10%);
 $main-color-lighter: lighten( $main-color, 10% );
@@ -16,6 +14,8 @@ $footer-bg: #3E3E3E;
 
 $link-color: #72A1A9;
 $link-hover:  #3E3E3E;
+
+$max-width-mobile:768px;
 
 @font-face {
 font-family: 'proxima nova regular';

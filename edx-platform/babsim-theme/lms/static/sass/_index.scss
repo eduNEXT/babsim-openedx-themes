@@ -1,0 +1,28 @@
+/*** Banner ***/
+.window-wrap{
+	.home>header div.outer-wrapper {
+    height: 257px;
+  }
+
+	.home>header .title{
+		background: transparent;
+		box-shadow: none;
+
+		.course-search .search-button{
+			background: #E57B25;
+			border: 2px solid #c36111;
+		}
+
+		div.heading-group {
+			h1,
+		  p {
+		  	color: white;
+		  }
+		}
+	}
+}
+
+/*** Profile ***/
+.view-profile .content-wrapper .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy{
+	min-width: 0;
+}

@@ -1,0 +1,29 @@
+/*** Course about ***/
+.content-wrapper .course-info header.course-profile .intro-inner-wrapper{
+	min-width: 0;
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses,
+section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register,
+section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart,
+section.course-info header.course-profile .intro-inner-wrapper section.intro .main-cta>a.find-courses:hover,
+section.course-info header.course-profile .intro-inner-wrapper section.intro .main-cta a.register:hover,
+section.course-info header.course-profile .intro-inner-wrapper section.intro .main-cta a.add-to-cart:hover,
+input[type="submit"],
+input[type="button"],
+button,
+div.heading-group h1 button,
+div.heading-group h1 button:hover {
+    box-shadow: 0 2px 1px 0 #c06317;
+    background: #E57B25;
+    color: #fff;
+    border: 0;
+    border-bottom: 0;
+}
+
+@media (max-width: $max-width-mobile){
+	.course-info header.course-profile
+	.intro-inner-wrapper .media div.hero img {
+		display: none;
+	}
+}

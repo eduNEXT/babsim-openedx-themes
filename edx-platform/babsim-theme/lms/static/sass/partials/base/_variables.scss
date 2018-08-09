@@ -18,10 +18,13 @@ $link-hover:  #3E3E3E;
 $max-width-mobile:768px;
 
 @font-face {
-font-family: 'proxima nova regular';
-font-style: normal;
-font-weight: normal;
-src: url('#{$static-path}/fonts/ProximaSansRegular-Regular.ttf') format('truetype');
+  font-family: 'proxima nova regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$static-path}/fonts/ProximaSansRegular-Regular.eot?#iefix') format('embedded-opentype'),
+   url('#{$static-path}/fonts/ProximaSansRegular-Regular.woff') format('woff'),
+   url('#{$static-path}/fonts/ProximaSansRegular-Regular.ttf')  format('truetype'),
+   url('#{$static-path}/fonts/ProximaSansRegular-Regular.svg#ProximaSansRegular') format('svg');
 }
 
 $sans-serif: 'proxima nova regular';

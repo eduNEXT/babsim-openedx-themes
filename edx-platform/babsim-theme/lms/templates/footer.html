@@ -20,20 +20,6 @@
       % endif
     >
       <div class="colophon">
-        <nav class="nav-colophon" aria-label="${_('About')}">
-          <ol>
-              <li class="nav-colophon-01">
-                <a id="about" href="https://babsim.com/about/">About</a>
-              </li>
-              <li class="nav-colophon-02">
-                <a id="babbage-simmel" href="https://babsim.com/">Babbage Simmel Home</a>
-              </li>
-              <li class="nav-colophon-03">
-                <a id="contactUs" href="https://babsim.com/contact/">Contact Us</a>
-              </li>
-          </ol>
-        </nav>
-
 
         <div class="wrapper-logo">
           <p>
@@ -45,7 +31,7 @@
               ## can be included in the footer on other sites
               ## (e.g. a blog or marketing front-end) to provide a consistent
               ## user experience.  See the branding app for details.
-              <img alt="organization logo" src="${static.url('images/BabbageSimmelAcademy-Logo-Vertical-White.png')}">
+              <img alt="organization logo" src="${static.url('images/BabbageSimmelAcademy-LogoFooter.png')}">
             </a>
           </p>
         </div>
@@ -68,6 +54,19 @@
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
+        <nav class="nav-colophon" aria-label="${_('About')}">
+          <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="https://babsim.com/about/">About</a>
+              </li>
+              <li class="nav-colophon-02">
+                <a id="babbage-simmel" href="https://babsim.com/">Babbage Simmel Home</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contactUs" href="https://babsim.com/contact/">Contact Us</a>
+              </li>
+          </ol>
+        </nav>
         <section class="social-feed">
         <a href="https://www.linkedin.com/company/babbage-simmel/" target="_blank">
           <span class="icon fa fa-linkedin" aria-hidden="true"></span>
@@ -82,22 +81,14 @@
           <span class="icon fa fa-instagram" aria-hidden="true"></span>
         </a>
       </section>
+      <div class="power-icon-footer">
+        <a href="${footer['openedx_link']['url']}" class="img-openedx">
+          <img src="${static.url('images/openedx-white.png')}" alt="${footer['openedx_link']['title']}" width="121" />
+        </a>
+        <a href="https://www.proversity.org/" class="img-proversity">
+          <img src="${static.url('images/proversity-white.png')}" width="110" />
+        </a>
       </div>
-      <div class="powered-icons">
-        <div class="footer-about-openedx icon-openedx">
-          <p>
-            <a href="https://www.proversity.org/">
-              <img src="${static.url('images/footer_proversity_BLANCO.png')}" width="120" />
-            </a>
-          </p>
-        </div>
-        <div>
-          <p>
-            <a href="${footer['openedx_link']['url']}">
-              <img src="${static.url('images/footer_openedx_BLANCO.png')}" alt="${footer['openedx_link']['title']}" width="120" />
-            </a>
-          </p>
-        </div>
       </div>
       % endif
     </footer>

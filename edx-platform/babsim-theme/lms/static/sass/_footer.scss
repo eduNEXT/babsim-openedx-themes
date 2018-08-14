@@ -1,6 +1,7 @@
 /**** Footer ***/
 div.wrapper-footer.wrapper-footer.wrapper {
   min-height: 168px;
+  padding-top: 0px;
 }
 
 .wrapper-footer.wrapper footer#footer-openedx {
@@ -30,7 +31,7 @@ div.wrapper-footer.wrapper-footer.wrapper {
 
 	p.copyright {
 		color: #F3F3F3;
-    margin: 20px 0 4px 0;
+    margin: 69px 0 4px 0px;
 	}
 
 	.powered-icons {
@@ -58,6 +59,15 @@ div.wrapper-footer.wrapper-footer.wrapper {
     width: 341px;
 		margin-top: 20px;
 
+    nav.nav-colophon {
+      margin-top: -7px;
+    }
+
+    section.social-feed {
+      margin-top: 4px;
+      margin-bottom: 28.5px;
+    }
+
 		a span {
 			margin: 15px;
 		}
@@ -75,7 +85,9 @@ div.wrapper-footer.wrapper-footer.wrapper {
 		margin: -3px 0;
 	}
 
-	.wrapper-logo {
+	div.wrapper-logo {
+    margin-bottom: 50px;
+    margin-top: 0px;
 
     img {
       max-width: 160px;
@@ -124,17 +136,27 @@ body.ltr.discussion.lang_en {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 0px;
 
     div.footer-about-openedx {
       justify-content: center;
     }
 
+
     .colophon {
-      width: 54%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
     }
 
-    .wrapper-logo img {
-      max-width: 232px;
+    .wrapper-logo {
+      margin: 28px 0;
+
+      img {
+        max-width: 232px;
+      }
     }
   }
 }

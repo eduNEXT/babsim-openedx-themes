@@ -147,8 +147,8 @@ body.ltr.discussion.lang_en {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 100%;
-      margin: 0;
+      width: 321px;
+      margin: 0 10% 0 10%;
     }
 
     .wrapper-logo {
@@ -157,6 +157,14 @@ body.ltr.discussion.lang_en {
       img {
         max-width: 232px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  div.wrapper-footer.wrapper footer#footer-openedx {
+    div.colophon {
+      margin: 0;
     }
   }
 }

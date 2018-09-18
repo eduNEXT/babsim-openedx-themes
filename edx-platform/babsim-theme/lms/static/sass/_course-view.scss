@@ -1,5 +1,14 @@
 /*** course-home ***/
 
+html body.view-in-course .window-wrap,
+html body .window-wrap {
+	min-width: 0;
+}
+
+.course-view button {
+	box-shadow: none;
+}
+
 @media (max-width: 768px){
 	.home div.page-header-main {
 		padding: 20px;

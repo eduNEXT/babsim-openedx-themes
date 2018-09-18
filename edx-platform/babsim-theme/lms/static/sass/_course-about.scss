@@ -21,6 +21,10 @@ div.heading-group h1 button:hover {
     border-bottom: 0;
 }
 
+.course-profile .heading-group button {
+	display: none;
+}
+
 @media (max-width: $max-width-mobile){
 	.course-info header.course-profile
 	.intro-inner-wrapper .media div.hero img {

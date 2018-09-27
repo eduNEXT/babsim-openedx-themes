@@ -14,44 +14,44 @@
 		.dashboard .my-courses .course .details {
 
 			.course-title a {
-			  font-size: 25px;
-			  line-height: 25px;
+				font-size: 25px;
+				line-height: 25px;
 			}
 
 			.wrapper-course-image {
 				width: 100%;
 
 				.cover {
-				  margin: 20px;
+					margin: 20px;
 
-				  .course-image {
-				    height: 120px;
-				    width: 180px;
-				  }
-			  }
-		  }
+					.course-image {
+						height: 120px;
+						width: 180px;
+					}
+				}
+			}
 
-		  .wrapper-course-details {
-			  float: none;
-			  width: 100%;
-	   	}
-    }
+			.wrapper-course-details {
+				float: none;
+				width: 100%;
+			}
+		}
 
 		.wrapper-account-settings .account-settings-container {
-		 	padding: 20px;
+			padding: 20px;
 		}
 
 		.account-settings-sections .section .account-settings-section-body .u-field {
-		 	width: 100%;
+			width: 100%;
 
-		 	.field {
-		 	 	width: 100%;
-		 	}
+			.field {
+				width: 100%;
+			}
 
-		 	.u-field-message{
-		 		width: 100%;
-		 		padding: 10px 0;
-		 	}
+			.u-field-message{
+				width: 100%;
+				padding: 10px 0;
+			}
 		}
 	}
 
@@ -60,15 +60,16 @@
 		.container {
 			min-width: 0;
 
-			.search-responsive {
-				width: 90%;
-				float: none;
-			}
-
 			.my-courses {
 				width: 90%;
 				margin-left: 5%;
 			}
-	  }
-  }
+
+			.dashboard-search-bar {
+				width: 90%;
+				float: none;
+				margin: 0 5%;
+			}
+		}
+	}
 }

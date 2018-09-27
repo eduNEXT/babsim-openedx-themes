@@ -1,8 +1,8 @@
 /*** Banner ***/
 .window-wrap{
 	.home>header div.outer-wrapper {
-    height: 257px;
-  }
+		height: 257px;
+	}
 
 	.home>header .title{
 		background: transparent;
@@ -15,9 +15,9 @@
 
 		div.heading-group {
 			h1,
-		  p {
-		  	color: white;
-		  }
+			p {
+				color: white;
+			}
 		}
 	}
 }
@@ -25,4 +25,27 @@
 /*** Profile ***/
 .view-profile .content-wrapper .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy{
 	min-width: 0;
+}
+
+@media only screen and (max-width: 502px) {
+	.view-profile .window-wrap {
+
+		.badge-set-display .badge-list {
+			padding: 0;
+
+			.badge-display {
+				width: 100%;
+				text-align: center;
+			}
+
+			.badge-description {
+				text-align: center;
+			}
+		} 
+
+		.profile-section-one-fields {
+			width: 100%;
+		}
+
+	}
 }

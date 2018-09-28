@@ -22,6 +22,12 @@
 	}
 }
 
+@media only screen and (max-width: 502px) {
+	.window-wrap .home>header .outer-wrapper {
+		padding: 0;
+	}
+}
+
 /*** Profile ***/
 .view-profile .content-wrapper .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy{
 	min-width: 0;

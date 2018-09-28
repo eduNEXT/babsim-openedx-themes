@@ -63,12 +63,16 @@
 			.my-courses {
 				width: 90%;
 				margin-left: 5%;
+				position: relative;
+				z-index: 1;
 			}
 
 			.dashboard-search-bar {
 				width: 90%;
 				float: none;
 				margin: 0 5%;
+				position: relative;
+				z-index: 0;
 			}
 		}
 	}
